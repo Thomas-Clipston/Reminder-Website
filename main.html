@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <script src="script.js" defer></script>
+   
+    <div class="navbar">
+        <a class="navbar">Reminders</a>    
+    </div>
+
+    <!-- Future nav bar maybe
+    <ul class="horz-nav">
+        <li><a>List-Items</a></li>
+        <li><a>Add-Items</a></li>
+        <li><a href="calender.html" style="text-decoration: none; color: inherit;">Calender</a></li>
+    </ul>
+    -->
+
+
+
+<div id="main">
+        <div class="list-elements" id = "list-elements">
+           <ul> 
+            <li>  
+                <input type="text" id="text-box" name="fname" style="margin: 10px;">
+                <input type="date" id="text-box2" name="fname" style="margin: 10px;">
+                <button class="button-85" role="button" onclick = "addItem()">Add New Reminder</button>
+            </li>
+            
+            <li>
+                <div class="list-wrapper">
+                <!-- Reminder List -->
+                    <ul id="reminder-list">
+                    </ul>
+                    <!-- Date List -->
+                    <ul id="date-list" >
+                    </ul>
+                </div>
+            </li>
+         </ul>
+        
+    </div>
+         <table class="table1" id = "calender">   
+            <tr>
+                <th colspan="7" class="months">
+                <button style="float: left; border: none; background-color: transparent;" onclick="prevMonth()">&#8592;</button>
+                <span id="calDate">September 2025</span>
+                <button style="float: right; border: none; background-color: transparent;" onclick="nextMonth()">&#8594;</button>
+                </th>
+            </tr>
+
+            
+            <tr class="days">
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wensday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            <tr >
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr >
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td colspan = "7" id="dayAct"></td>
+
+            </tr>
+        </table>
+        <img src="spin.gif">
+    </body>
+    
+
+    
+
+
+</html>
